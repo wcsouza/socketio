@@ -1,5 +1,6 @@
 $(document).ready(function() {
-  var socket = io.connect("https://testesocketiowcs.herokuapp.com");
+  //var socket = io.connect("https://testesocketiowcs.herokuapp.com");
+  var socket = io.connect("https://nodewcs.azurewebsites.net");
   //var socket = io.connect("http://localhost:8080");
   var ready = false;
 
