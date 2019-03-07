@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js"
   },
   "author": "",
   "license": "ISC",
@@ -13,5 +13,8 @@
     "jquery": "^3.3.1",
     "socket.io": "^2.2.0",
     "socket.io-client": "^2.2.0"
+  },
+  "engines": {
+    "node": "10.x"
   }
 }
