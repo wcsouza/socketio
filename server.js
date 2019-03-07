@@ -1,4 +1,5 @@
-var app = require("express")();
+var express = require("express");
+var app = express();
 var http = require("http").Server(app);
 var io = require("socket.io")(http);
 var port = process.env.PORT || 8080;
@@ -8,6 +9,12 @@ var clients = {};
 app.get("/", function(req, res) {
   res.send("server is running");
 });
+
+app.use(express.static('public'));
+
+// app.get('/index', function(request, response){
+//   response.sendfile('./public/index.html');
+// });
 
 io.on("connection", function(client) {
   client.on("join", function(name) {
