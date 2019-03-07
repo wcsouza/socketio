@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  var socket = io.connect("http://localhost:8080");
+  var socket = io.connect("https://testesocketiowcs.herokuapp.com");
   var ready = false;
 
   $("#submit").submit(function(e) {
