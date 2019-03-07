@@ -30,5 +30,5 @@ io.on("connection", function(client) {
 });
 
 http.listen(port, function() {
-  console.log("listening on port 3000");
+  console.log("listening on port " + port);
 });
